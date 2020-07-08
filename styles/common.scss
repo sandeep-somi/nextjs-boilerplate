@@ -1,0 +1,50 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html,
+body {
+  padding: 0;
+  margin: 0 auto;
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  font-size: 14px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+a {
+  color: #0070f3;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+.hero {
+  @apply py-20;
+}
+
+.title {
+  @apply text-5xl text-center;
+  color: #333;
+  line-height: 1.15;
+}
+
+.lang-container {
+  position: fixed;
+  top: 0;
+  right: 0;
+  z-index: 1000;
+  opacity: 0.3;
+  &:hover {
+    opacity: 1;
+  }
+}
