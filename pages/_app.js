@@ -24,11 +24,11 @@ function AppContainer({ Component, pageProps }) {
   )
 }
 
-// AppContainer.getInitialProps = async ({ Component, ctx }) => {
-//   const pageProps = Component.getInitialProps ? await Component.getInitialProps(ctx) : {};
-//   return {
-//     pageProps
-//   }
-// }
+AppContainer.getInitialProps = async ({ Component, ctx }) => {
+  const pageProps = Component.getInitialProps ? await Component.getInitialProps(ctx) : {};
+  return {
+    pageProps
+  }
+}
 
 export default store.withRedux(appWithTranslation(AppContainer));
